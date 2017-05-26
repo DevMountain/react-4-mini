@@ -4,7 +4,7 @@
 
 In this project we will create a DevMountain swag shop using `react-router-dom`. The logic for the shop will already be built out. We will complete this project by building out a router and adding `Link`s. 
 
-<img src="https://gitlab.com/devlemire/react-routing/raw/solution/readme-assets/1.png" />
+<img src="https://github.com/DevMountain/react-routing/blob/solution/readme-assets/1.png" />
 
 ## Setup
 
