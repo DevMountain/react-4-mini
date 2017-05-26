@@ -2,7 +2,7 @@
 
 # Project Summary
 
-In this project we will create a DevMountain swag shop using `react-router-dom`. The logic for the shop will already be built out. We will complete this project by building out a router and adding `Link`s. 
+In this project, we will create a DevMountain swag shop using `react-router-dom`. The logic for the shop will already be built out. We will complete this project by building out a router and adding `Link`s. 
 
 <img src="https://github.com/DevMountain/react-routing/blob/solution/readme-assets/1.png" />
 
@@ -33,7 +33,7 @@ In this step, we will install `react-router-dom` and start configuring our store
     * `src/components/Details/Details.js`
   * Checkout - This component will be a page where the user can checkout.
     * `src/components/Checkout/Checkout.js`
-* Inside the parenthesis return a `Switch` component with a nested `Route` components:
+* Inside the parentheses return a `Switch` component with a nested `Route` components:
   * Store:
     * Set the `path` prop of this component to `"/"`.
     * Add the `exact` prop to this component.
@@ -72,7 +72,7 @@ export default (
 
 ## Step 2
 
-In this step we will modify our `index.js` to use a router. We'll do this by importing `BrowserRouter` from `react-router-dom` and including it in the `ReactDOM.render` statement.
+In this step, we will modify our `index.js` to use a router. We'll do this by importing `BrowserRouter` from `react-router-dom` and including it in the `ReactDOM.render` statement.
 
 ### Instructions
 
@@ -114,7 +114,7 @@ registerServiceWorker();
 
 ### Summary
 
-In this step we will modify our App.js to render our `router` onto the DOM.
+In this step, we will modify our App.js to render our `router` onto the DOM.
 
 ### Instructions
 
@@ -160,7 +160,7 @@ export default function App() {
 
 ### Summary
 
-In this step we will begin to wire up our routes in our store. We'll begin with the `Nav` component. 
+In this step, we will begin to wire up our routes in our store. We'll begin with the `Nav` component. 
 
 ### Instructions
 
@@ -228,7 +228,7 @@ export default connect( mapStateToProps )( Nav );
 
 ### Summary
 
-In this step we will use route parameters to navigate to a detailed page for each product.
+In this step, we will use route parameters to navigate to a detailed page for each product.
 
 ### Instructions
 
@@ -287,7 +287,7 @@ export default function Product( { id, title, img, price, addToCart } ) {
 
 ### Summary
 
-In this step we will add a link to our `Details` component that will allow us to navigate back to the main store page.
+In this step, we will add a link to our `Details` component that will allow us to navigate back to the main store page.
 
 ### Instructions
 
@@ -353,7 +353,7 @@ export default connect( mapStateToProps, { addToCart } )( Details );
 
 ### Summary
 
-In this step we will update our `Cart` component to be able to link to the details page for any product.
+In this step, we will update our `Cart` component to be able to link to the details page for any product.
 
 ### Instructions
 
