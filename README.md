@@ -49,7 +49,7 @@ In this step, we will install `react-router-dom` and start configuring our store
 
 <details>
 
-<summary> <code> router.js </code> </summary>
+<summary> <code> src/router.js </code> </summary>
 
 ```javascript
 import React from "react";
@@ -84,7 +84,7 @@ In this step we will modify our `index.js` to use a router. We'll do this by imp
 
 <details>
 
-<summary> <code> index.js </code> </summary>
+<summary> <code> src/index.js </code> </summary>
 
 ```jsx
 import React from 'react';
@@ -110,9 +110,27 @@ registerServiceWorker();
 
 </details>
 
+## Step 3 
 
+In this step we will modify our App.js to actually render our `router`.
 
+### Instructions
 
+* Open `src/components/App.js`.
+* Import `router` from `src/router.js`.
+* Render `router` above `<Cart />`.
+
+### Solution
+
+<details>
+
+<summary> <code> src/components/App.js </code> </summary>
+
+```jsx
+
+```
+
+</details>
 
 
 
