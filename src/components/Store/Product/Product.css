@@ -30,13 +30,16 @@
   cursor: pointer;
 }
 
-.StoreProduct__navLink {
-  text-decoration: none;
-  color: black;
+#StoreProduct__title {
   margin: 0;
   background-color: white;
   width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.StoreProduct__navLink {
+  color: black;
+  text-decoration: none;
 }

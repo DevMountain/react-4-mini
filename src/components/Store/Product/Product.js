@@ -9,9 +9,11 @@ export default function Product( { id, title, img, price, addToCart } ) {
         <img src={ img } alt="Product" className="swagImg" width="200px" height="139.39px" />
       </Link>
       <div id="StoreProduct__details">
-        <Link to={ `details/${ id }` } className="StoreProduct__navLink">
-          <span> { title } </span>
-        </Link>
+        <div id="StoreProduct__title">
+          <Link to={ `details/${ id }` } className="StoreProduct__navLink">
+            <span> { title } </span>
+          </Link>
+        </div>
         <div id="StoreProduct__addToCart" onClick={ () => { addToCart( id ) } }>
           <span> ${ price } </span>
           <span> Add to Cart </span>
