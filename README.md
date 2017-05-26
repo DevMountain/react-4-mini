@@ -70,8 +70,45 @@ export default (
 
 </details>
 
+## Step 2
 
+In this step we will modify our `index.js` to use a router. We'll do this by importing `BrowserRouter` from `react-router-dom` and including it in the `ReactDOM.render` statement.
 
+### Instructions
+
+* Open `src/index.js`.
+* Import `BrowserRouter` from `react-router-dom`.
+* Wrap the `Provider` component in `ReactDOM.render` with a `BrowserRouter` component.
+
+### Solution
+
+<details>
+
+<summary> <code> index.js </code> </summary>
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/App';
+import registerServiceWorker from './registerServiceWorker';
+
+import { BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+
+import store from './store';
+
+ReactDOM.render(
+  <BrowserRouter>
+    <Provider store={ store }>
+      <App />
+    </Provider>
+  </BrowserRouter>, 
+  document.getElementById('root')
+);
+registerServiceWorker();
+```
+
+</details>
 
 
 
