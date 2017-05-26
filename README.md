@@ -236,11 +236,11 @@ In this step we will use route parameters to navigate to a detailed page for eac
 * Import `Link` from `react-router-dom`.
 * Locate the `img` element:
   * Wrap the element in a `Link` component.
-  * The `Link` component should us a `to` prop that equals ```{ `details/${id}` }```
+  * The `Link` component should us a `to` prop that equals ```{ `/details/${id}` }```
   * `id` gets passed in from the parent `Store` component.
 * Locate the `span` element with the value of `{ title }`:
   * Wrap the element in a `Link` component.
-  * The `Link` component should use a `to` prop that equals ```{ `details/${id}` }```
+  * The `Link` component should use a `to` prop that equals ```{ `/details/${id}` }```
   * Assign a `className` of `StoreProduct__navLink` to the new `Link` component.
 
 
@@ -263,7 +263,7 @@ export default function Product( { id, title, img, price, addToCart } ) {
       </Link>
       <div id="StoreProduct__details">
         <div id="StoreProduct__title">
-          <Link to={ `details/${ id }` } className="StoreProduct__navLink">
+          <Link to={ `/details/${ id }` } className="StoreProduct__navLink">
             <span> { title } </span>
           </Link>
         </div>
@@ -348,6 +348,42 @@ export default connect( mapStateToProps, { addToCart } )( Details );
 <br />
 
 <img src="https://github.com/DevMountain/react-routing/blob/solution/readme-assets/3g.gif" />
+
+## Step 7
+
+### Summary
+
+In this step we will update our `Cart` component to be able to link to the details page for any product.
+
+### Instructions
+
+Try it yourself. The component we'll want wrapped in a `Link` component is the `div` with the `id` of `CartProduct__container`. The link component should link to the `Details` component and use a parameter to link the correct product. ( Hint: Look at the parameters of the function ). This link component should also have a `id` of `"CartProduct__navLink"`.
+
+### Solution
+
+<details>
+
+<summary> <code> src/components/Cart/Product/Product.js </code> </summary>
+
+```jsx
+import React from 'react';
+import { Link } from "react-router-dom";
+
+import './Product.css';
+
+export default function Product( { title, img, id } ) {
+  return (
+    <Link to={ `/details/${id}` } id="CartProduct__navLink">
+      <div id="CartProduct__container">
+        <img alt="Product" src={ img } width="70px" height="70px" />
+        <span id="CartProduct__title"> { title } </span>
+      </div>
+    </Link>
+  )
+}
+```
+
+</details>
 
 ## Contributions
 
