@@ -1,7 +1,3 @@
-.navLink {
-  text-decoration: none;
-}
-
 .Nav__label {
   color: black;
   font-size: 25px;
@@ -39,4 +35,9 @@
   position: relative;
   top: 3px;
   color: black;
+}
+
+#Nav__checkoutContainer {
+  display: inline;
+  float: right;
 }
