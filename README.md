@@ -198,7 +198,7 @@ function Nav( { items } ) {
           <span className="Nav__label">Store</span>
         </Link>
 
-        <Link className="navLink fr" to="/checkout">
+        <Link className="navLink" to="/checkout">
           <div id="Nav__checkoutContainer">
             <div id="Nav__itemsInCart"> { items } </div>
             <ShoppingCart id="Nav__shoppingCart" />
@@ -220,6 +220,7 @@ export default connect( mapStateToProps )( Nav );
 
 </details>
 
+<img src="https://github.com/DevMountain/react-routing/blob/solution/readme-assets/1g.gif" />
 
 
 
