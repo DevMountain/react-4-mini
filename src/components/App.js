@@ -12,6 +12,7 @@ export default function App() {
       <Nav />
       <div id="App__mainContainer">
         <div id="App__routerContainer">
+          { router }
           <Cart />
         </div>
       </div>

@@ -1,12 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './Product.css';
 
 export default function Product( { id, title, img, price, addToCart } ) {
   return (
     <div id="StoreProduct__container">
-      <img src={ img } alt="Product" className="swagImg" width="200px" height="139.39px" />
+      <Link to={ `details/${ id }` }>
+        <img src={ img } alt="Product" className="swagImg" width="200px" height="139.39px" />
+      </Link>
       <div id="StoreProduct__details">
-        <span> { title } </span>
+        <Link to={ `details/${ id }` } className="StoreProduct__navLink">
+          <span> { title } </span>
+        </Link>
         <div id="StoreProduct__addToCart" onClick={ () => { addToCart( id ) } }>
           <span> ${ price } </span>
           <span> Add to Cart </span>

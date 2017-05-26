@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
 import './Nav.css';
@@ -9,10 +10,14 @@ function Nav( { items } ) {
   return (
     <div id="Nav__container">
       <div id="Nav__linksContainer">
-        <span>Store</span>
+        <Link className="navLink" to="/">
+          <span>Store</span>
+        </Link>
 
-        <div id="Nav__itemsInCart"> { items } </div>
-        <ShoppingCart id="Nav__shoppingCart" />
+        <Link className="navLink fr" to="/checkout">
+          <div id="Nav__itemsInCart"> { items } </div>
+          <ShoppingCart id="Nav__shoppingCart" />
+        </Link>
       </div>
     </div>
   )
