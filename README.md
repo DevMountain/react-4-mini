@@ -152,7 +152,7 @@ export default function App() {
 
 </details>
 
-<img src="https://gitlab.com/devlemire/react-routing/raw/solution/readme-assets/2.png" />
+<img src="https://github.com/DevMountain/react-routing/blob/solution/readme-assets/2.png" />
 
 
 
