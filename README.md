@@ -112,7 +112,7 @@ registerServiceWorker();
 
 ## Step 3 
 
-In this step we will modify our App.js to actually render our `router`.
+In this step we will modify our App.js to render our `router` onto the DOM.
 
 ### Instructions
 
