@@ -10,10 +10,14 @@ function Nav( { items } ) {
   return (
     <div id="Nav__container">
       <div id="Nav__linksContainer">
+        <Link className="navLink" to="/">
           <span className="Nav__label">Store</span>
+        </Link>
 
+        <Link className="navLink fr" to="/checkout">
           <div id="Nav__itemsInCart"> { items } </div>
           <ShoppingCart id="Nav__shoppingCart" />
+        </Link>
       </div>
     </div>
   )
