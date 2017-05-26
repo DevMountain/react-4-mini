@@ -283,6 +283,72 @@ export default function Product( { id, title, img, price, addToCart } ) {
 
 <img src="https://github.com/DevMountain/react-routing/blob/solution/readme-assets/2g.gif" />
 
+## Step 6
+
+### Summary
+
+In this step we will add a link to our `Details` component that will allow us to navigate back to the main store page.
+
+### Instructions
+
+* Open `src/components/Details/Details.js`.
+* Import `Link` from `react-router-dom`.
+* Locate the `p` element with the value of `< Back to store`:
+  * Wrap this element in a `Link` component.
+  * This `Link` component should have a `to` prop that equals `"/"`.
+  * Assign an `id` of `Details__storeLink` to the new `Link` component.
+
+### Solution
+
+<details>
+
+<summary> <code> src/components/Details/Details.js </code> </summary>
+
+```jsx
+
+import React from "react";
+import { addToCart } from "../../ducks/reducer";
+import { connect } from "react-redux";
+import { Link } from "react-router-dom";
+
+import './Details.css';
+
+function Details( { swag, history, addToCart } ) {
+
+  function addAndRedirect() {
+    addToCart( swag.id );
+    history.push('/');
+  } 
+
+  return (
+    <div id="Details__container">
+      <Link to="/" id="Details__storeLink">
+        <p> { '<' } Back to store </p>
+      </Link>
+      <img id="Details__img" src={ swag.img } alt="Product" width="400px" />
+      <p id="Details__title"> { swag.title } </p>
+      <p id="Details__price"> ${ swag.price } </p>
+      <button id="Details__addToCart" onClick={ addAndRedirect }> Add to Cart </button>
+      <p> { swag.description } </p>
+      <p> { swag.promo } </p>
+    </div>
+  )
+}
+
+function mapStateToProps( state, ownProps ) {
+  const swag = state.swag.filter( swag => swag.id === ownProps.match.params.id )[0];
+  return { swag };
+}
+
+export default connect( mapStateToProps, { addToCart } )( Details );
+```
+
+</details>
+
+<br />
+
+<img src="https://github.com/DevMountain/react-routing/blob/solution/readme-assets/3g.gif" />
+
 ## Contributions
 
 If you see a problem or a typo, please fork, make the necessary changes, and create a pull request so we can review your changes and merge them into the master repo and branch.
