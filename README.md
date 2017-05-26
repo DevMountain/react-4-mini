@@ -112,6 +112,8 @@ registerServiceWorker();
 
 ## Step 3 
 
+### Summary
+
 In this step we will modify our App.js to render our `router` onto the DOM.
 
 ### Instructions
@@ -154,8 +156,25 @@ export default function App() {
 
 <img src="https://github.com/DevMountain/react-routing/blob/solution/readme-assets/2.png" />
 
+## Step 4
 
+### Summary
 
+In this step we will begin to wire up our routes in our store. We'll begin with the `Nav` component. 
+
+### Instructions
+
+### Solution
+
+<details>
+
+<summary> <code> src/components/Nav/Nav.js </code> </summary>
+
+```jsx
+
+```
+
+</details>
 
 
 
