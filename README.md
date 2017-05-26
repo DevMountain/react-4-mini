@@ -164,6 +164,17 @@ In this step we will begin to wire up our routes in our store. We'll begin with 
 
 ### Instructions
 
+* Open `src/components/Nav/Nav.js`.
+* Import `Link` from `react-router-dom`.
+* Locate the element with `className` of `Nav__label`:
+  * Wrap this element in a `Link` component.
+  * The `Link` component should use a `to` prop that equals `"/"`.
+  * Assign a `className` of `navLink` to the new `Link` component.
+* Locate the element with the `id` of `Nav__checkoutContainer`:
+  * Wrap this element in a `Link` component.
+  * The `Link` component should use a `to` prop that equqls `"/checkout"`.
+  * Assign a `className` of `navLink` to the new `Link` component.
+
 ### Solution
 
 <details>
@@ -171,7 +182,40 @@ In this step we will begin to wire up our routes in our store. We'll begin with 
 <summary> <code> src/components/Nav/Nav.js </code> </summary>
 
 ```jsx
+import React from "react";
+import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 
+import './Nav.css';
+
+import ShoppingCart from 'react-icons/lib/fa/shopping-cart';
+
+function Nav( { items } ) {
+  return (
+    <div id="Nav__container">
+      <div id="Nav__linksContainer">
+        <Link className="navLink" to="/">
+          <span className="Nav__label">Store</span>
+        </Link>
+
+        <Link className="navLink fr" to="/checkout">
+          <div id="Nav__checkoutContainer">
+            <div id="Nav__itemsInCart"> { items } </div>
+            <ShoppingCart id="Nav__shoppingCart" />
+          </div>
+        </Link>
+      </div>
+    </div>
+  )
+}
+
+function mapStateToProps( state ) {
+  return {
+    items: state.cart.length
+  };
+}
+
+export default connect( mapStateToProps )( Nav );
 ```
 
 </details>
