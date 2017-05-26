@@ -363,8 +363,6 @@ We are going to be editting two files in this step. Try to complete them both on
 
 In this component we'll update the products that appear in the cart to be able to route to the details page for that product. The element we'll want wrapped in a `Link` component is the `div` with the `id` of `CartProduct__container`. The link component should link to the `Details` component and use a parameter to link the correct product. ( Hint: Look at the parameters of the function ). This link component should also have a `id` of `"CartProduct__navLink"`.
 
-<br />
-
 `src/components/Cart/Cart.js`:
 
 In this component we'll update the blue checkout button to be able to route to the checkout page. The element we'll want wrapped in a `Link` component is the `div` with the `id` of `Cart__footer`. The link component should link to the `Checkout` component. This link component should also have an `id` of `Cart__navLink`.
