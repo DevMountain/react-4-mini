@@ -42,3 +42,7 @@ body {
   background: #fff;
   position: relative;
 }
+
+.navLink {
+  text-decoration: none;
+}

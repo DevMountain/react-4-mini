@@ -30,8 +30,7 @@
   cursor: pointer;
 }
 
-.StoreProduct__navLink {
-  text-decoration: none;
+#StoreProduct__title {
   color: black;
   margin: 0;
   background-color: white;
