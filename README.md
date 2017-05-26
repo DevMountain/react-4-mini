@@ -234,6 +234,14 @@ In this step we will use route parameters to navigate to a detailed page for eac
 
 * Open `src/components/Store/Product/Product.js`.
 * Import `Link` from `react-router-dom`.
+* Locate the `img` element:
+  * Wrap the element in a `Link` component.
+  * The `Link` component should us a `to` prop that equals ```{ `details/${id}` }```
+  * `id` gets passed in from the parent `Store` component.
+* Locate the `span` element with the value of `{ title }`:
+  * Wrap the element in a `Link` component.
+  * The `Link` component should use a `to` prop that equals ```{ `details/${id}` }```
+  * Assign a `className` of `StoreProduct__navLink` to the new `Link` component.
 
 
 ### Solution
@@ -251,7 +259,7 @@ export default function Product( { id, title, img, price, addToCart } ) {
   return (
     <div id="StoreProduct__container">
       <Link to={ `details/${ id }` }>
-        <img src={ img } alt="Product" className="swagImg" width="200px" height="139.39px" />
+        <img src={ img } alt="Product" width="200px" height="139.39px" />
       </Link>
       <div id="StoreProduct__details">
         <div id="StoreProduct__title">
