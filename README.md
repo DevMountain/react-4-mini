@@ -371,7 +371,7 @@ In this component we'll update the products that appear in the cart to be able t
 
 <br />
 
-In this component we'll update the blue checkout button to be able to route to the checkout page. 
+In this component we'll update the blue checkout button to be able to route to the checkout page. The element we'll want wrapped in a `Link` component is the `div` with the `id` of `Cart__footer`. The link component should link to the `Checkout` component. This link component should also have an `id` of `Cart__navLink`.
 
 ### Solution
 
@@ -401,81 +401,16 @@ export default function Product( { title, img, id } ) {
 
 <details>
 
-<summary> <code> src/components/Cart/Cart.js </code> </summary>
+<summary> <code> src/components/Cart/Cart.js ( not entire file ) </code> </summary>
 
 ```jsx
-import React, { Component } from "react";
-import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
-import Product from './Product/Product';
-import ShoppingCart from 'react-icons/lib/fa/shopping-cart';
-
-import './Cart.css';
-
-class Cart extends Component {
-  constructor() {
-    super();
-    this.state = {
-      expanded: false
-    };
-
-    this.toggleCartDetails = this.toggleCartDetails.bind( this );
-  }
-  
-  toggleCartDetails() {
-    this.setState({ expanded: !this.state.expanded});
-  }
-
-  render() {
-    const {
-      swagInCart,
-      total,
-      howMuchSwag
-    } = this.props;
-
-    let swagComponents = swagInCart.map( swag => (
-      <Product 
-        key={ swag.id }
-        title={ swag.title }
-        img={ swag.img }
-        id={ swag.id }
-      />
-    ));
-
-    return (
-      this.state.expanded 
-      ?
-        <div id="Cart__containerExpanded">
-          <div id="Cart__header" onClick={ this.toggleCartDetails }>
-            <span> <ShoppingCart id="Cart__icon" /> { howMuchSwag } items: </span>
-            <span> ${ total } </span>
-          </div>
-          <div id="Cart__details">
-            { swagComponents }
-          </div>
-          <Link to="/checkout" style={ { textDecoration: 'none' } }>
-            <div id="Cart__footer" onClick={ this.toggleCartDetails }>
-              <span> Checkout </span>
-            </div>
-          </Link>
-        </div>
-      :
-        <div id="Cart__container" onClick={ this.toggleCartDetails }>
-          <span> <ShoppingCart id="Cart__icon" /> { howMuchSwag } items: </span>
-          <span> ${ total } </span>
-        </div>
-    )
-  }
-}
-
-function mapStateToProps( state ) {
-  var swagInCart = state.cart.map( id => state.swag.filter( swag => swag.id === id )[0] );
-  var total = swagInCart.reduce( ( total, swag ) => total + parseFloat(swag.price), 0 ).toFixed(2);
-  return { swagInCart, total, howMuchSwag: swagInCart.length };
-}
-
-export default connect( mapStateToProps )( Cart );
+<Link to="/checkout" id="Cart__navLink">
+  <div id="Cart__footer" onClick={ this.toggleCartDetails }>
+    <span> Checkout </span>
+  </div>
+</Link>
 ```
 
 </details>
