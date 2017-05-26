@@ -1,9 +1,12 @@
 .navLink {
-  margin-right: 10px;
   text-decoration: none;
+}
+
+.Nav__label {
   color: black;
   font-size: 25px;
   cursor: pointer;
+  margin-right: 10px;
 }
 
 .fr {
@@ -35,4 +38,5 @@
   display: inline;
   position: relative;
   top: 3px;
+  color: black;
 }
