@@ -1,0 +1,42 @@
+#StoreProduct__container {
+  width: 200px;
+  height: 199px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+#StoreProduct__details {
+  display: flex;
+  width: 200px;
+  margin-top: -4px;
+  position: absolute;
+  bottom: 0;
+}
+
+#StoreProduct__addToCart {
+  background-color: #6CC2F2;
+  color: white;
+  width: 85px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.StoreProduct__navLink {
+  text-decoration: none;
+  color: black;
+  margin: 0;
+  background-color: white;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

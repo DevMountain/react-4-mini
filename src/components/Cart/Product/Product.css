@@ -1,0 +1,17 @@
+#CartProduct__container{
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
+  background-color: white;
+  padding: 3px;
+  font-weight: normal;
+}
+
+#CartProduct__title {
+  margin-left: 10px;
+}
+
+#CartProduct__navLink {
+  text-decoration: none;
+  color: black;
+}

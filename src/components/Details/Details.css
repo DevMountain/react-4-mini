@@ -1,0 +1,35 @@
+#Details__container {
+  padding: 20px 50px;
+}
+
+#Details__storeLink {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#Details__title {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0px;
+}
+
+#Details__price {
+  font-size: 25px;
+  margin-top: 0px;
+}
+
+#Details__img {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+#Details__addToCart {
+  background: #6CC2F2;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 2px;
+  height: 50px;
+  width: 150px;
+}
