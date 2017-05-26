@@ -15,8 +15,10 @@ function Nav( { items } ) {
         </Link>
 
         <Link className="navLink fr" to="/checkout">
-          <div id="Nav__itemsInCart"> { items } </div>
-          <ShoppingCart id="Nav__shoppingCart" />
+          <div id="Nav__checkoutContainer">
+            <div id="Nav__itemsInCart"> { items } </div>
+            <ShoppingCart id="Nav__shoppingCart" />
+          </div>
         </Link>
       </div>
     </div>
