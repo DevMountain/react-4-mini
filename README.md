@@ -411,7 +411,7 @@ import { Link } from "react-router-dom";
 
 <br />
 
-<img src="https://github.com/DevMountain/react-routing/blob/solution/readme-assets/4g.gif" />
+<img src="https://github.com/DevMountain/react-routing/blob/solution/readme-assets/4-1g.gif" />
 
 ## Contributions
 
