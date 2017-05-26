@@ -172,7 +172,7 @@ In this step we will begin to wire up our routes in our store. We'll begin with 
   * Assign a `className` of `navLink` to the new `Link` component.
 * Locate the element with the `id` of `Nav__checkoutContainer`:
   * Wrap this element in a `Link` component.
-  * The `Link` component should use a `to` prop that equqls `"/checkout"`.
+  * The `Link` component should use a `to` prop that equals `"/checkout"`.
   * Assign a `className` of `navLink` to the new `Link` component.
 
 ### Solution
@@ -220,7 +220,56 @@ export default connect( mapStateToProps )( Nav );
 
 </details>
 
+<br />
+
 <img src="https://github.com/DevMountain/react-routing/blob/solution/readme-assets/1g.gif" />
+
+## Step 5
+
+### Summary
+
+In this step we will use route parameters to navigate to a detailed page for each product.
+
+### Instructions
+
+* Open `src/components/Store/Product/Product.js`.
+* Import `Link` from `react-router-dom`.
+
+
+### Solution
+
+<details>
+
+<summary> <code> src/components/Store/Product/Product.js </code> </summary>
+
+```jsx
+import React from "react";
+import { Link } from "react-router-dom";
+import './Product.css';
+
+export default function Product( { id, title, img, price, addToCart } ) {
+  return (
+    <div id="StoreProduct__container">
+      <Link to={ `details/${ id }` }>
+        <img src={ img } alt="Product" className="swagImg" width="200px" height="139.39px" />
+      </Link>
+      <div id="StoreProduct__details">
+        <div id="StoreProduct__title">
+          <Link to={ `details/${ id }` } className="StoreProduct__navLink">
+            <span> { title } </span>
+          </Link>
+        </div>
+        <div id="StoreProduct__addToCart" onClick={ () => { addToCart( id ) } }>
+          <span> ${ price } </span>
+          <span> Add to Cart </span>
+        </div>
+      </div>
+    </div>
+  )
+}
+```
+
+</details>
 
 
 
