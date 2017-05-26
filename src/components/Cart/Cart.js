@@ -48,7 +48,7 @@ class Cart extends Component {
           <div id="Cart__details">
             { swagComponents }
           </div>
-          <Link to="/checkout" style={ { textDecoration: 'none' } }>
+          <Link to="/checkout" id="Cart__navLink">
             <div id="Cart__footer" onClick={ this.toggleCartDetails }>
               <span> Checkout </span>
             </div>

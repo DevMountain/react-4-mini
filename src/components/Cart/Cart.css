@@ -72,3 +72,7 @@
 #Cart__checkoutBtn {
   width: 200px;
 }
+
+#Cart__navLink {
+  text-decoration: none;
+}
