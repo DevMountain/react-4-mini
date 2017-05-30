@@ -237,7 +237,6 @@ In this step, we will use route parameters to navigate to a detailed page for ea
 * Locate the `img` element:
   * Wrap the element in a `Link` component.
   * The `Link` component should us a `to` prop that equals ```{ `/details/${id}` }```
-  * `id` gets passed in from the parent `Store` component.
 * Locate the `span` element with the value of `{ title }`:
   * Wrap the element in a `Link` component.
   * The `Link` component should use a `to` prop that equals ```{ `/details/${id}` }```
