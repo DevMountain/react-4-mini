@@ -33,7 +33,7 @@ In this step, we will install `react-router-dom` and start configuring our store
     * `src/components/Details/Details.js`
   * Checkout - This component will be a page where the user can checkout.
     * `src/components/Checkout/Checkout.js`
-* Inside the parentheses return a `Switch` component with a nested `Route` components:
+* Inside the parentheses return a `Switch` component with nested `Route` components:
   * Store:
     * Set the `path` prop of this component to `"/"`.
     * Add the `exact` prop to this component.
