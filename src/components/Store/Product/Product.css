@@ -1,7 +1,7 @@
 #StoreProduct__container {
   width: 200px;
   height: 199px;
-  margin-right: 20px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;

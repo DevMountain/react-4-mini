@@ -30,8 +30,6 @@ body {
 #App__mainContainer {
   width: 100%;
   height: calc(100vh - 105px);
-  min-height: 671px;
-  min-width: 1440px;
   display: flex;
   justify-content: center;
   overflow: hidden;
