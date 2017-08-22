@@ -356,7 +356,7 @@ In this step, we will update our `Cart` component to be able to link to the deta
 
 ### Instructions
 
-We are going to be editting two files in this step. Try to complete them both on your own.
+We are going to be editing two files in this step. Try to complete them both on your own.
 
 `src/components/Cart/Product/Product.js`:
 
