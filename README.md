@@ -139,6 +139,156 @@ export default (
 
 </details>
 
+## Step 4
+
+### Summary
+
+In this step, we'll render the `router` inside the main `src/App.js` component.
+
+### Instructions
+
+* Open `src/App.js`.
+* Import the `src/router.js` file.
+* Underneath the `<p></p>` element use `{}` to break out of JSX and render the imported router.
+
+### Solution
+
+<details>
+
+<summary> <code> src/App.js </code> </summary>
+
+```js
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+import router from './router';
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Welcome to React</h1>
+        </header>
+        <p className="App-intro">
+          To get started, edit <code>src/App.js</code> and save to reload.
+        </p>
+
+        { router }
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+
+</details>
+
+## Step 5
+
+### Summary
+
+In this step, we'll configure our React application to handle routing.
+
+### Instructions
+
+* Open `src/index.js`.
+* Import `HashRouter` from `react-router-dom`.
+* In the `ReactDOM.render` statement, wrap the `<App />` component in a `<HashRouter></HashRouter>` component.
+
+### Solution
+
+<details>
+
+<summary> <code> src/index.js </code> </summary>
+
+```js
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
+
+// Routing
+import { HashRouter } from 'react-router-dom';
+
+ReactDOM.render(
+  <HashRouter>
+    <App />
+  </HashRouter>
+, document.getElementById('root'));
+
+registerServiceWorker();
+```
+
+</details>
+
+## Step 6
+
+### Summary 
+
+In this step, we'll provide a way for a user to navigate between the routes. Using `react-router-dom` this done by using the `<Link></Link>` component.
+
+### Instructions
+
+* Open `src/App.js`.
+* Import `Link` from `react-router-dom`.
+* Above the rendering of the router, add three `<Link>` components that route to the three different paths configured in `src/router.js`.
+
+### Solution
+
+<details>
+
+<summary> <code> src/App.js </code> </summary>
+
+```js
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+import router from './router';
+import { Link } from 'react-router-dom';
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Welcome to React</h1>
+        </header>
+        <p className="App-intro">
+          To get started, edit <code>src/App.js</code> and save to reload.
+        </p>
+
+        <Link to="/">
+          <p>Route 1</p>
+        </Link>
+
+        <Link to="/2">
+          <p>Route 2</p>
+        </Link>
+
+        <Link to="/3">
+          <p>Route 3</p>
+        </Link>
+        
+        { router }
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+
+</details>
+
+<img src="https://github.com/DevMountain/react-routing/blob/solution/readme-assets/2g.gif" />
+
 
 ## Contributions
 
