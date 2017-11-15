@@ -232,7 +232,7 @@ registerServiceWorker();
 
 ### Summary 
 
-In this step, we'll provide a way for a user to navigate between the routes. Using `react-router-dom` this done by using the `<Link></Link>` component.
+In this step, we'll provide a way for a user to navigate between the routes. Using `react-router-dom`, this is done by using the `<Link></Link>` component.
 
 ### Instructions
 
