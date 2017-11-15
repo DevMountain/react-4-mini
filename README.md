@@ -13,6 +13,7 @@ In this project, we will create a very basic React application from scratch that
 * `Fork` and `clone` this repository.
 * `cd` into the project.
 * Run `create-react-app ./` to get a React boilerplate.
+  * Delete `README.md` and rename `README.old.md` back to `README.md`.
 
 ## Step 1
 
