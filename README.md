@@ -8,8 +8,6 @@ In this project, we will create a very basic React application from scratch that
 
 <a href="https://devmountain.github.io/react-routing/#/">Click Me!</a>
 
-<br />
-
 <img src="https://github.com/DevMountain/react-routing/blob/solution/readme-assets/1.png" />
 
 ## Setup
