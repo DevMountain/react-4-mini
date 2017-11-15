@@ -289,6 +289,8 @@ export default App;
 
 </details>
 
+<br />
+
 <img src="https://github.com/DevMountain/react-routing/blob/solution/readme-assets/2g.gif" />
 
 
