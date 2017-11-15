@@ -83,6 +83,19 @@ export default function Route3() {
 
 </details>
 
+## Step 2
+
+### Summary
+
+In this step, we will add the `react-router-dom` package to our React project.
+
+### Instructions
+
+* Run `npm install --save react-router-dom`.
+
+### Solution
+
+
 
 
 
