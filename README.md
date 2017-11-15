@@ -97,9 +97,47 @@ In this step, we will add the `react-router-dom` package to our React project.
 
 <img src="https://github.com/DevMountain/react-routing/blob/solution/readme-assets/1g.gif" />
 
+## Step 3
 
+### Summary
 
+In this step, we will configure a router using a `router.js` file.
 
+### Instructions
+
+* Create a new `src/router.js` file.
+* Open `src/router.js`.
+* Import `React` from `react`;
+* Import `{ Switch, Route }` from `react-router-dom`;
+* Import the three `src/Route#.js` components.
+* Export by default a `<Switch></Switch>` component.
+* Add three `<Route></Route>` components for each `src/Route#.js` component inside the exported `<Switch></Switch>` component
+
+## Solution
+
+<details>
+
+<summary> <code> src/router.js </code> </summary>
+
+```js
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+
+// Components
+import Route1 from './Route1';
+import Route2 from './Route2';
+import Route3 from './Route3';
+
+export default (
+  <Switch>
+    <Route exact path="/" component={ Route1 } />
+    <Route path="/2" component={ Route2 } />
+    <Route path="/3" component={ Route3 } />
+  </Switch>
+)
+```
+
+</details>
 
 
 ## Contributions
