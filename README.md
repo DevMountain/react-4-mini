@@ -95,7 +95,7 @@ In this step, we will add the `react-router-dom` package to our React project.
 
 ### Solution
 
-
+<img src="https://github.com/DevMountain/react-routing/blob/solution/readme-assets/1g.gif" />
 
 
 
