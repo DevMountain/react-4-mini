@@ -19,9 +19,72 @@ In this project, we will create a very basic React application from scratch that
 
 ### Summary 
 
+In this step, we will create three basic components that will be used later for three separate routes.
+
 ### Instructions
 
+* Open `src/`.
+* Create a `Route1.js`, `Route2.js`, and `Route3.js`.
+* All three `Router#.js` files should be very basic state-less components.
+
 ### Solution
+
+<details>
+
+<summary> <code> src/Route1.js </code> </summary>
+
+```js
+import React from 'react';
+
+export default function Route1() {
+  return (
+    <div>
+      Route 1 here!
+    </div>
+  )
+}
+```
+
+</details>
+
+<details>
+
+<summary> <code> src/Route2.js </code> </summary>
+
+```js
+import React from 'react';
+
+export default function Route2() {
+  return (
+    <div>
+      Route 2 here!
+    </div>
+  )
+}
+```
+
+</details>
+
+<details>
+
+<summary> <code> src/Route3.js </code> </summary>
+
+```js
+import React from 'react';
+
+export default function Route3() {
+  return (
+    <div>
+      Route 3 here!
+    </div>
+  )
+}
+```
+
+</details>
+
+
+
 
 
 
