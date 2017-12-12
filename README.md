@@ -27,7 +27,7 @@ In this step, we will create three basic components that will be used later for 
 
 * Open `src/`.
 * Create a `Route1.js`, `Route2.js`, and `Route3.js`.
-* All three `Router#.js` files should be very basic state-less components.
+* All three `Route#.js` files should be very basic state-less components.
 
 ### Solution
 
@@ -103,12 +103,12 @@ In this step, we will add the `react-router-dom` package to our React project.
 
 ### Summary
 
-In this step, we will configure a router using a `router.js` file.
+In this step, we will configure routes using a `routes.js` file.
 
 ### Instructions
 
-* Create a new `src/router.js` file.
-* Open `src/router.js`.
+* Create a new `src/routes.js` file.
+* Open `src/routes.js`.
 * Import `React` from `react`.
 * Import `{ Switch, Route }` from `react-router-dom`.
 * Import the three `src/Route#.js` components.
@@ -119,7 +119,7 @@ In this step, we will configure a router using a `router.js` file.
 
 <details>
 
-<summary> <code> src/router.js </code> </summary>
+<summary> <code> src/routes.js </code> </summary>
 
 ```js
 import React from 'react';
@@ -145,12 +145,12 @@ export default (
 
 ### Summary
 
-In this step, we'll render the `router` inside the main `src/App.js` component.
+In this step, we'll render the `routes` inside the main `src/App.js` component.
 
 ### Instructions
 
 * Open `src/App.js`.
-* Import the `src/router.js` file.
+* Import the `src/routes.js` file.
 * Underneath the `<p></p>` element use `{}` to break out of JSX and render the imported router.
 
 ### Solution
@@ -164,7 +164,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import router from './router';
+import routes from './routes';
 
 class App extends Component {
   render() {
@@ -178,7 +178,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
 
-        { router }
+        { routes }
       </div>
     );
   }
@@ -238,7 +238,7 @@ In this step, we'll provide a way for a user to navigate between the routes. Usi
 
 * Open `src/App.js`.
 * Import `Link` from `react-router-dom`.
-* Above the rendering of the router, add three `<Link>` components that route to the three different paths configured in `src/router.js`.
+* Above the rendering of the routes, add three `<Link>` components that route to the three different paths configured in `src/routes.js`.
 
 ### Solution
 
@@ -251,7 +251,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import router from './router';
+import routes from './routes';
 import { Link } from 'react-router-dom';
 
 class App extends Component {
@@ -278,7 +278,7 @@ class App extends Component {
           <p>Route 3</p>
         </Link>
         
-        { router }
+        { routes }
       </div>
     );
   }
