@@ -17,5 +17,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://devmountain.github.io/react-routing"
+  "homepage": "https://devmountain.github.io/react-4-mini/"
 }
