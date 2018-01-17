@@ -6,9 +6,9 @@ In this project, we will create a very basic React application from scratch that
 
 ## Live Example
 
-<a href="https://devmountain.github.io/react-routing/#/">Click Me!</a>
+<a href="https://devmountain.github.io/react-4-mini/#/">Click Me!</a>
 
-<img src="https://github.com/DevMountain/react-routing/blob/solution/readme-assets/1.png" />
+<img src="https://github.com/DevMountain/react-4-mini/blob/solution/readme-assets/1.png" />
 
 ## Setup
 
@@ -97,7 +97,7 @@ In this step, we will add the `react-router-dom` package to our React project.
 
 ### Solution
 
-<img src="https://github.com/DevMountain/react-routing/blob/solution/readme-assets/1g.gif" />
+<img src="https://github.com/DevMountain/react-4-mini/blob/solution/readme-assets/1g.gif" />
 
 ## Step 3
 
@@ -291,7 +291,7 @@ export default App;
 
 <br />
 
-<img src="https://github.com/DevMountain/react-routing/blob/solution/readme-assets/2g.gif" />
+<img src="https://github.com/DevMountain/react-4-mini/blob/solution/readme-assets/2g.gif" />
 
 
 ## Contributions
