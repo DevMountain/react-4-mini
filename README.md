@@ -113,7 +113,7 @@ In this step, we will configure routes using a `routes.js` file.
 * Import `{ Switch, Route }` from `react-router-dom`.
 * Import the three `src/Route#.js` components.
 * Export by default a `<Switch></Switch>` component.
-* Add three `<Route></Route>` components for each `src/Route#.js` component inside the exported `<Switch></Switch>` component.
+* Add three `<Route/>` components for each `src/Route#.js` component inside the exported `<Switch></Switch>` component.
 
 ## Solution
 
