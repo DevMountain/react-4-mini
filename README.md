@@ -2,20 +2,22 @@
 
 # Project Summary
 
-In this project, we will create a very basic React application from scratch that makes use of multiple routes. We will be using the `react-router-dom` package, specifically v4. You can find more documentation to read on your own time here: <a href="https://reacttraining.com/react-router/web/guides/philosophy">Click Me!</a>
+In this project, we will create a very basic React application from scratch that makes use of multiple routes. We will be using the `react-router-dom` package.
 
 ## Live Example
 
-<a href="https://devmountain.github.io/react-4-mini/#/">Click Me!</a>
+<a href="https://devmountain.github.io/react-4-mini/#/">Click Me!</a>UPDATE ME!!!!!!!!!!!!!!!!
 
-<img src="https://github.com/DevMountain/react-4-mini/blob/solution/readme-assets/1.png" />
+<img src="https://github.com/DevMountain/react-4-mini/blob/master/readme-images/home_view.png" />
+
+<img src="https://github.com/DevMountain/react-4-mini/blob/master/readme-images/topic_view.png" />
+
+<img src="https://github.com/DevMountain/react-4-mini/blob/master/readme-images/post_view.png" />
 
 ## Setup
 
 * `Fork` and `clone` this repository.
-* `cd` into the project.
-* Run `create-react-app ./` to get a React boilerplate.
-  * Delete `README.md` and rename `README.old.md` back to `README.md`.
+* Run `npm i`.
 
 ## Step 1
 
