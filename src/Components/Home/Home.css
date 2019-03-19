@@ -1,0 +1,14 @@
+.Home {
+  background: white url('./../../images/background.png') center/cover no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Home h2 {
+  font: 24px "Roboto Slab", sans-serif;
+  color: white;
+}
