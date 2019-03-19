@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import posts from "./../../post_data.json";
-import './TopicList.css';
+import "./TopicList.css";
 
 class TopicList extends Component {
   render() {

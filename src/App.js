@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { HashRouter } from "react-router-dom";
 import routes from "./routes";
-import Nav from './Components/Nav/Nav';
+import Nav from "./Components/Nav/Nav";
 import "./App.css";
 
 class App extends Component {
@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <HashRouter>
         <div className="App">
-          <Nav/>
+          <Nav />
           {routes}
         </div>
       </HashRouter>
