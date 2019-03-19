@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import logo from './../../images/dm_white_logo.png';
-import './Nav.css';
+import React, { Component } from "react";
+import logo from "./../../images/dm_white_logo.png";
+import "./Nav.css";
 
 class Nav extends Component {
   render() {
@@ -18,4 +18,4 @@ class Nav extends Component {
   }
 }
 
-export default Nav
+export default Nav;
