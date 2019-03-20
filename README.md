@@ -21,7 +21,7 @@ In this project, we will create a very basic React blog application that makes u
 
 ## Step 1
 
-### Summary 
+### Summary
 
 In this step we will install the routing package we need and setup our router.
 
@@ -30,7 +30,7 @@ In this step we will install the routing package we need and setup our router.
 * Run `npm i react-router-dom`.
 * Open `App.js`.
 * Import `HashRouter`from `react-router-dom`.
-* Wrap `HashRouter` around the existing `div`.
+* Wrap the `HashRouter` component around the existing `div`.
 
 ### Solution
 
@@ -78,9 +78,10 @@ In this step, we will create our routes using the existing components.
 * Import `Switch` and `Route` from `react-router-dom`.
 * Import two of our view components, `Home` and`TopicList`.
 * Export by default a `Switch` component.
-* Add two `Route` components inside the `Switch`, one for both the views we imported.
+* Add two `Route` components inside the `Switch` component, one for both the views we imported.
   * Each route should have a `path` and a `component` prop.
   * Home should have a `path` of `'/'`.
+    * Home should have the `exact` prop
   * TopicList should have a `path` of `'/topics'`.
 
 ### Solution
@@ -97,7 +98,7 @@ import TopicList from "./Components/TopicList/TopicList";
 export default (
   <Switch>
     <Route exact path="/" component={Home} />
-    <Route exact path="/topics" component={TopicList} />
+    <Route path="/topics" component={TopicList} />
   </Switch>
 );
 ```
@@ -114,8 +115,8 @@ In this step, we'll render the `routes` inside the main `App.js` component.
 
 * Open `App.js`.
 * Import the `routes.js` file.
-* Delete the `h1` element entirely.
-* Underneath the `Nav` component use `{}` to break out of JSX and render the imported router.
+* Delete the entire `h1` element.
+* Underneath the `Nav` component use `{}` to `interpolate` (insert) and render the imported router.
 
 ### Solution
 
@@ -153,7 +154,7 @@ export default App;
 
 ### Summary
 
-In this step, we will setup navigation to the routes we just set up.
+In this step, we will setup navigation to the routes we just created.
 
 ### Instructions
 
@@ -211,7 +212,7 @@ In this step, we'll add another route that uses parameters.
 
 * Open `routes.js`.
 * Import our final view component, `Post`.
-* Add an additional `Route` to our `Switch`.
+* Add an additional `Route` component to our `Switch`.
   * It should have a `path` of `'/post/:id'`.
 
 ### Solution
@@ -230,8 +231,8 @@ import Post from "./Components/Post/Post";
 export default (
   <Switch>
     <Route exact path="/" component={Home} />
-    <Route exact path="/topics" component={TopicList} />
-    <Route exact path="/post/:id" component={Post} />
+    <Route path="/topics" component={TopicList} />
+    <Route path="/post/:id" component={Post} />
   </Switch>
 );
 
@@ -241,14 +242,14 @@ export default (
 
 ## Step 6
 
-### Summary 
+### Summary
 
 In this step, we'll change our `Post` view to use the route parameter to display the correct blog post.
 
 ### Instructions
 
 * Open `Post.js`.
-* Update the `find` method in `componentDidMount` to use the param data instead of being hard-coded to the number 2.
+* Update the `find` method in `componentDidMount` to use the `params` data instead of being hard-coded to the number 2.
   * Remember routing data, like parameters, is found on props.
   * IMPORTANT: parameters are strings (because they are a part of the URL). The ids of our posts are numbers, so be careful when comparing them.
 
@@ -263,7 +264,7 @@ In this step, we'll change our `Post` view to use the route parameter to display
   componentDidMount() {
     // This is where you would make an axios call to a server in a fullstack application
     // but for today we'll be just be filter over an array of dummy data
-    let post = posts.find(post => post.id === +this.props.match.params.id);
+    let post = posts.find(post => post.id === parseInt(this.props.match.params.id));
     this.setState({
       title: post.title,
       content: post.content
@@ -276,7 +277,7 @@ In this step, we'll change our `Post` view to use the route parameter to display
 
 ## Step 7
 
-### Summary 
+### Summary
 
 In this step, we'll change our `TopicList` view to link to the `Post` view.
 
@@ -317,7 +318,7 @@ If you see a problem or a typo, please fork, make the necessary changes, and cre
 
 ## Copyright
 
-© DevMountain LLC, 2017. Unauthorized use and/or duplication of this material without express and written permission from DevMountain, LLC is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to DevMountain with appropriate and specific direction to the original content.
+© DevMountain LLC, 2019. Unauthorized use and/or duplication of this material without express and written permission from DevMountain, LLC is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to DevMountain with appropriate and specific direction to the original content.
 
 <p align="center">
 <img src="https://s3.amazonaws.com/devmountain/readme-logo.png" width="250">
