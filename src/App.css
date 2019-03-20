@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab');
+
+body {
+  color: #2BAAE2;
+  background: #252525;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  font: 16px "Roboto Mono", sans-serif;
+}
+
+h1 {
+  font: 48px "Roboto Slab", sans-serif;
+  margin-bottom: 20px;
+}

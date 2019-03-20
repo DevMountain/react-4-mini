@@ -1,0 +1,39 @@
+.Nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #252525;
+}
+
+.Nav img {
+  width: 300px;
+}
+
+.Nav ul {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font: 24px 'Roboto Slab', sans-serif;
+}
+
+.Nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.Nav a:visited {
+  color: white;
+}
+
+.Nav a:active{
+  color: #2BAAE2;
+}
+
+.Nav a:hover {
+  color: #2BAAE2;
+}
