@@ -6,7 +6,7 @@ In this project, we will create a very basic React blog application that makes u
 
 ## Live Example
 
-<a href="https://devmountain.github.io/react-4-mini/#/">Click Me!</a>UPDATE ME!!!!!!!!!!!!!!!!
+<a href="https://devmountain.github.io/react-4-mini/#/">Click Me!</a>
 
 <img src="https://github.com/DevMountain/react-4-mini/blob/master/readme-images/home_view.png" />
 
